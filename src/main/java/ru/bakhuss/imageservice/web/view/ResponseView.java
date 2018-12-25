@@ -1,4 +1,4 @@
-package ru.bakhuss.imageservice.view;
+package ru.bakhuss.imageservice.web.view;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 

@@ -1,4 +1,4 @@
-package ru.bakhuss.imageservice.controller.impl;
+package ru.bakhuss.imageservice.web.controller.impl;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -9,15 +9,15 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import ru.bakhuss.imageservice.controller.ImageController;
+import ru.bakhuss.imageservice.web.controller.ImageController;
 import ru.bakhuss.imageservice.model.Image;
 import ru.bakhuss.imageservice.service.ImageService;
-import ru.bakhuss.imageservice.view.ResponseView;
+import ru.bakhuss.imageservice.web.view.ResponseView;
 
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 
 @RestController
-@RequestMapping(value = "/", produces = APPLICATION_JSON_VALUE)
+@RequestMapping(value = "/api/image/", produces = APPLICATION_JSON_VALUE)
 public class ImageControllerImpl implements ImageController {
     private final Logger log = LoggerFactory.getLogger(ImageControllerImpl.class);
 
@@ -41,12 +41,14 @@ public class ImageControllerImpl implements ImageController {
     }
 
     @Override
-    public ResponseView updateImage(Image image) {
-        return null;
+    @PostMapping("/update")
+    public ResponseView updateImage(@RequestBody Image image) {
+        return new ResponseView();
     }
 
     @Override
-    public ResponseView deleteImage(Long id) {
-        return null;
+    @PostMapping("/delete/{id}")
+    public ResponseView deleteImage(@PathVariable Long id) {
+        return new ResponseView();
     }
 }

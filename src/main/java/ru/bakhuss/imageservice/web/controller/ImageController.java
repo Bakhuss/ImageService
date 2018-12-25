@@ -1,7 +1,7 @@
-package ru.bakhuss.imageservice.controller;
+package ru.bakhuss.imageservice.web.controller;
 
 import ru.bakhuss.imageservice.model.Image;
-import ru.bakhuss.imageservice.view.ResponseView;
+import ru.bakhuss.imageservice.web.view.ResponseView;
 
 /**
  * Контроллер для работы с Image
@@ -13,7 +13,7 @@ public interface ImageController {
      * @param image
      * @return result success
      */
-    ResponseView addImage(Image image);
+     ResponseView addImage(Image image);
 
     /**
      * Получить Image по id
