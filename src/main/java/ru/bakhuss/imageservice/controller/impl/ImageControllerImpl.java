@@ -1,4 +1,4 @@
-package ru.bakhuss.imageservice.web.controller.impl;
+package ru.bakhuss.imageservice.controller.impl;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import ru.bakhuss.imageservice.web.controller.ImageController;
+import ru.bakhuss.imageservice.controller.ImageController;
 import ru.bakhuss.imageservice.model.Image;
 import ru.bakhuss.imageservice.service.ImageService;
-import ru.bakhuss.imageservice.web.view.ResponseView;
+import ru.bakhuss.imageservice.view.ResponseView;
 
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 

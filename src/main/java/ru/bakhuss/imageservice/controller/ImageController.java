@@ -1,7 +1,7 @@
-package ru.bakhuss.imageservice.web.controller;
+package ru.bakhuss.imageservice.controller;
 
 import ru.bakhuss.imageservice.model.Image;
-import ru.bakhuss.imageservice.web.view.ResponseView;
+import ru.bakhuss.imageservice.view.ResponseView;
 
 /**
  * Контроллер для работы с Image
